@@ -114,7 +114,7 @@ if __name__ == "__main__":
         target_outputs = np.concatenate([cat_targets, dog_targets], axis=0)
 
         # Train the neural network
-        neural_network.train(inputs, target_outputs, epochs=2000, learning_rate=0.02)
+        neural_network.train(inputs, target_outputs, epochs=2500, learning_rate=0.2)
         # Save the trained model
         joblib.dump(neural_network, model_path)
         # Test the neural network with more images and evaluate its performance

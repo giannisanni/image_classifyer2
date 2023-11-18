@@ -96,8 +96,8 @@ if __name__ == "__main__":
         neural_network = NeuralNetwork(3072, 150, 2, hidden_layers=3)  # Updated output_nodes to 4
 
     # Define training data and add more image samples
-    cat_paths = ['cat1.jpg', 'cat2.jpg', 'cat3.jpg', 'cat4.jpg', 'cat5.jpg', 'cat6.jpg', 'cat7.jpg', 'cat8.jpg', 'cat9.jpg', 'cat10.jpg', 'cat11.jpg', 'cat12.jpg', 'cat13.jpg', 'cat14.jpg', 'cat15.jpg', 'cat16.jpg', 'cat17.jpg', 'cat18.jpg', 'cat19.jpg', 'cat20.jpg']
-    dog_paths = ['dog1.jpg', 'dog2.jpg', 'dog3.jpg', 'dog4.jpg', 'dog5.jpg', 'dog6.jpg', 'dog7.jpg', 'dog8.jpg', 'dog9.jpg', 'dog10.jpg', 'dog11.jpg', 'dog12.jpg', 'dog13.jpg', 'dog14.jpg', 'dog15.jpg', 'dog16.jpg', 'dog17.jpg', 'dog18.jpg', 'dog19.jpg', 'dog20.jpg']
+    cat_paths = ['cat1.jpg', 'cat2.jpg', 'cat3.jpg', 'cat4.jpg', 'cat5.jpg', 'cat6.jpg', 'cat7.jpg', 'cat8.jpg', 'cat9.jpg', 'cat10.jpg', 'cat11.jpg', 'cat12.jpg', 'cat13.jpg', 'cat14.jpg']
+    dog_paths = ['dog1.jpg', 'dog2.jpg', 'dog3.jpg', 'dog4.jpg', 'dog5.jpg', 'dog6.jpg', 'dog7.jpg', 'dog8.jpg', 'dog9.jpg', 'dog10.jpg', 'dog11.jpg', 'dog12.jpg', 'dog13.jpg', 'dog14.jpg']
 
     cat_inputs = [process_image(cat_path) for cat_path in cat_paths]
     dog_inputs = [process_image(dog_path) for dog_path in dog_paths]

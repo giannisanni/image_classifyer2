@@ -170,6 +170,23 @@ def main():
             # Show test image predictions
             st.write("Test Image Predictions:")
             st.write(prediction)
-
+            
+        st.markdown("This application is an image classification tool using a neural network. The nn was made with python "
+                "using the numpy and joblib librairies, while the streamlit librairy was used to host and create the "
+                "front end interface of the app. The user can upload an image of a cat or a dog, and the neural network "
+                "classifies the image as either a cat or a dog based on its training. The neural network has been "
+                "trained on a dataset of images of cats and dogs (10 each).To test the model, you can upload images of "
+                "cats or dogs using the Streamlit interface. A potential weak spot could be the small size of the "
+                "training dataset and the simplicity of the neural network architecture "
+                "( it only has 3 hidden layers, total layers=5). To further improve the nn, we must consider data "
+                "augmentation, hyperparameter tuning, Regularization, and diversifying the dataset. The speed of the "
+                "application itself could also be inproved. This could be done best by using a a diffrent cloud service"
+                " to host it, or make a local version (which has the downside of varying speeds depending on the user "
+                "hardware).The main issue with this nn is that it tends to overfit for test images not in it's dataset "
+                "(the model learns training data too well, thus capturing noise and random fluctuations as data which "
+                "causes it to focus less on underlying patterns), which decreses the accuracy of the model.The advantages"
+                " of this implementation include: a somewhat user-friendly UI, and a quick and easy way to deploy a "
+                "pre-trained nn for image classification.")
+        
 if __name__ == "__main__":
     main()
